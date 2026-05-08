@@ -1,8 +1,9 @@
-# A função input() lê a entrada do usuário como string; o int() realiza a conversão explícita (casting) para número inteiro
-numero_escolhido = int(input("Digite um número inteiro entre 1 e 10: "))
+# Captura a entrada do usuário e realiza a conversão explícita (casting) de string para float
+# para permitir cálculos com números decimais e garantir a precisão dos dados.
+temperatura_celsius = float(input("Digite a temperatura em graus Celsius: "))
 
-# Processamento do cálculo utilizando a biblioteca math com variável autodescritiva
-resultado_fatorial = math.factorial(numero_escolhido)
+# Aplica a fórmula de conversão utilizando operadores aritméticos e respeitando a precedência
+temperatura_fahrenheit = (temperatura_celsius * 9 / 5) + 32
 
-# Exibição do resultado final utilizando f-string para maior clareza
-print(f"O fatorial de {numero_escolhido} é de: {resultado_fatorial}")
+# Exibe o resultado final formatado utilizando f-string para uma saída clara e profissional
+print(f"A temperatura convertida é {temperatura_fahrenheit} graus Fahrenheit.")
